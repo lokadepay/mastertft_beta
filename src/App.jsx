@@ -155,7 +155,7 @@ function App() {
                 return (
                   <div key={comp.id} className='main__grid__card' onClick={() => openComp(comp.id)}>
                     {headliner && (
-                      <img src={`/assets/champions/${headliner.id}.png`} alt={headliner.name} className='card-bg' />
+                      <img src={`./assets/champions/${headliner.id}.png`} alt={headliner.name} className='card-bg' />
                     )}
                     <div className='card-info'>
                       <h3>{comp.name}</h3>

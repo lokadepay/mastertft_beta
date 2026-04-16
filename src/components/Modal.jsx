@@ -213,7 +213,7 @@ export default function Modal({ comp, setComps, onClose }) {
                                         onDragStart={(e) => handleDragStart(e, champ)}
                                     >
                                         <img
-                                            src={`/assets/champions/${champ.id}.png`}
+                                            src={`./assets/champions/${champ.id}.png`}
                                             alt={champ.name}
                                             className={`cost-${champ.cost}`}
                                         />
@@ -231,7 +231,7 @@ export default function Modal({ comp, setComps, onClose }) {
                                 className={`synergy-tag ${syn.style}`}
                             >
                                 <div className='synergy-tag__icon'>
-                                    <img src={`/assets/traits/${syn.id}.svg`} alt={syn.name} />
+                                    <img src={`./assets/traits/${syn.id}.svg`} alt={syn.name} />
                                 </div>
                                 <span className='synergy-tag__count'>{syn.count}</span>
                             </div>
