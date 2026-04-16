@@ -154,7 +154,7 @@ export default function Modal({ comp, setComps, onClose }) {
                                 {coreUnits.map(unit => (
                                     <img
                                         key={unit.uid}
-                                        src={`/assets/champions/${unit.id}.png`}
+                                        src={`./assets/champions/${unit.id}.png`}
                                         className={`board-unit cost-${unit.cost}`}
                                         alt={unit.name}
                                         onClick={() => handleRemoveUnit(unit.uid, 'core')}
@@ -180,7 +180,7 @@ export default function Modal({ comp, setComps, onClose }) {
                                         {fz.units.map(unit => (
                                             <img
                                                 key={unit.uid}
-                                                src={`/assets/champions/${unit.id}.png`}
+                                                src={`./assets/champions/${unit.id}.png`}
                                                 className={`board-unit cost-${unit.cost} small`}
                                                 alt={unit.name}
                                                 onClick={() => handleRemoveUnit(unit.uid, 'flex', fz.id)}
