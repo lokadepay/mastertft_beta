@@ -13,7 +13,7 @@
     ]
   },
   {
-    "id": "arbitrer",
+    "id": "arbiter",
     "name": "Arbiter",
     "description": "Scribe a unique divine law, allowing you to choose an effect to apply to Arbiters when a chosen cause occurs.",
     "thresholds": [
@@ -342,8 +342,8 @@
     ]
   },
   {
-    "id": "channeler",
-    "name": "Channeler",
+    "id": "conduit",
+    "name": "Conduit",
     "description": "Innate: Channelers gain 20% additional Mana from all sources. Your team gains Mana Regen, increased for Channelers.",
     "thresholds": [
       2,
