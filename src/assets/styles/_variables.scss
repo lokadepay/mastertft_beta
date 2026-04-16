@@ -1,0 +1,36 @@
+// --- FONTS ---
+$title-font: 'Bebas Neue', sans-serif;
+$text-font: 'Roboto', sans-serif;
+
+// --- COULEURS ---
+$deep-purple: #191928;
+$dark-purple: #232134;
+$straight-purple: #6E5A8B;
+$light-purple: #C0A6E5;
+$common-txt: #E5E5E5;
+$second-txt: #A0A0B0;
+$five-cost: #FFB300;
+$four-cost: #9C27B0;
+$three-cost: #2196F3;
+$two-cost: #4CAF50;
+$one-cost: #B0B0B0;
+$chall: #1D5567;
+$grandmaster: #5E1109;
+$master: #402C58;
+$gold: #D4AF37;
+$silver: #C0C0C0;
+$bronze: #8C6239;
+$prisma: #64E0D7;
+$goodwr: #4ADE80;
+$midwr: #F8A071;
+$badwr: #FF6060;
+
+// --- AUTRES ---
+:root {
+    --deep-purple: #{$deep-purple};
+    --dark-purple: #{$dark-purple};
+    --straight-purple: #{$straight-purple};
+    --light-purple: #{$light-purple};
+    --common-txt: #{$common-txt};
+    --second-txt: #{$second-txt};
+}

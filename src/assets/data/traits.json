@@ -1,0 +1,485 @@
+[
+  {
+    "id": "anima",
+    "name": "Anima",
+    "description": "After losing a player combat, gain 15 Tech, plus additional Tech equal to 5 times the length of your loss streak. Additionally, gain 2 Tech per Anima takedown. Each time Animas get 100 Tech, they prototype new Anima Weapons. You can take them, or save your Tech to get more powerful weapons next time.",
+    "thresholds": [
+      3,
+      6
+    ],
+    "bonuses": [
+      "Start Researching!",
+      "Gain a loot Orb upon win"
+    ]
+  },
+  {
+    "id": "arbitrer",
+    "name": "Arbiter",
+    "description": "Scribe a unique divine law, allowing you to choose an effect to apply to Arbiters when a chosen cause occurs.",
+    "thresholds": [
+      2,
+      3
+    ],
+    "bonuses": [
+      "Choose a cause and effect for your law",
+      "Effects are stronger"
+    ]
+  },
+  {
+    "id": "bulwark",
+    "name": "Bulwark",
+    "description": "Summon a placeable relic. At the start of combat, it grants adjacent allies an 18% max Health shield and 20% Attack Speed.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "commander",
+    "name": "Commander",
+    "description": "Sona gives you a random Command Mod every 2 rounds which allows you to alter the way an ally behaves during combat. Command Mods last 2 player combats even if they are not equipped.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "dark_lady",
+    "name": "Dark Lady",
+    "description": "Allies take 5% less damage from abilities, increased to 10% while Morgana is in Dark Form.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "dark_star",
+    "name": "Dark Star",
+    "description": "Summon a Black Hole.",
+    "thresholds": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "bonuses": [
+      "Dark Stars create a black hole that consumes enemies at 10% max health",
+      "AND they gain 30% AD & AP",
+      "AND the strongest Dark Star unit goes supermassive, gaining 100% effectiveness from Dark Star, and creates 2 minor Black Holes",
+      "All Dark Stars are supermassive. At level 10, CONSUME EVERYONE"
+    ]
+  },
+  {
+    "id": "divine_duelist",
+    "name": "Divine Duelist",
+    "description": "You heal for 15% of player damage you deal. Fiora always wins a one on one duel.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "doomer",
+    "name": "Doomer",
+    "description": "Combat Start: Mark all enemies with Doom. The first time enemies are damaged each combat, their Doom is consumed, stealing 8% Attack Damage and Ability Power from them and granting it to your strongest Vex.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "eradicator",
+    "name": "Eradicator",
+    "description": "Enemies have 14% less Armor and Magic Resist.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "factory_new",
+    "name": "Factory New",
+    "description": "After participating in combat, open an armory to purchase a permanent upgrade for your strongest Graves. Every 3 upgrades, future upgrades will take an additional round.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "galaxy_hunter",
+    "name": "Galaxy Hunter",
+    "description": "Zed is obtained from the Invader Zed augment. While at least one clone is alive, Zed gains 40% bonus Attack Damage.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "gun_goddess",
+    "name": "Gun Goddess",
+    "description": "When you field Miss Fortune, choose between Channeler Mode, Challenger Mode, and Replicator Mode. Miss Fortune has a unique ability based on her mode and gains the associated trait.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "mecha",
+    "name": "Mecha",
+    "description": "Innate: Mecha units can transform into their Ultimate form, upgrading their ability and gaining 60% Health. Transformed Mechas take up two team slots and count twice for the Mecha trait.",
+    "thresholds": [
+      3,
+      4,
+      6
+    ],
+    "bonuses": [
+      "Energy Cells: Mechas gain 20% AD & AP",
+      "Overclocked Cells: Increased to 35% AD & AP",
+      "Precision Engineering: +1 max team size"
+    ]
+  },
+  {
+    "id": "meeple",
+    "name": "Meeple",
+    "description": "Astronauts attract Meeps that empower Astronaut abilities in meepy ways. They also gain bonus Health. Cloning time = Champion cost.",
+    "thresholds": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "bonuses": [
+      "2%, 125 Health",
+      "3%, 250 Health",
+      "4%, 400 Health. Create a Cloning Slot on your bench. Gain gold and a 1-star copy of the champion placed there when cloning completes",
+      "6%, 1000 Health. SUMMON THE FOUR MEEPLORDS!"
+    ]
+  },
+  {
+    "id": "nova",
+    "name": "N.O.V.A.",
+    "description": "6 seconds into combat, N.O.V.A. champions grant a power surge to allies based on champions: Aatrox — Ally Damage 30% Shred and Sunders enemies / Caitlyn — Grant allies 20% Attack Speed / Akali — Allies gain Precision / Maokai — Allies heal 15% max Health / Kindred — Shield the strongest Tank for 800 / Emblem — Allies deal 10% stacking bonus true damage.",
+    "thresholds": [
+      2,
+      5
+    ],
+    "bonuses": [
+      "6 seconds into combat, N.O.V.A. grant a power surge to allies based on champions",
+      "Gain a Striker selector. The chosen N.O.V.A. activates their Strike during the power surge"
+    ]
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle",
+    "description": "Every 3 rounds, Tahm Kench grants a reward!",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "party_animal",
+    "name": "Party Animal",
+    "description": "Once per combat, after falling below 45% Health, become untargetable and repair 15% max Health per second. Upon reaching full Health, or when no other allies remain, return to combat. If fully healed, for the rest of combat Blitzcrank is in The Groove and Party Crasher's passive fires bolts four times as fast.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Bonus Effect"
+    ]
+  },
+  {
+    "id": "primordian",
+    "name": "Primordian",
+    "description": "Spawn swarmlings. 8% of damage taken contributes to damage dealt.",
+    "thresholds": [
+      2,
+      3
+    ],
+    "bonuses": [
+      "Dealing damage spawns Swarmlings based on Primordian star level",
+      "Spawn even more Swarmlings! Each round, gain a random 1 or 2-cost champion"
+    ]
+  },
+  {
+    "id": "psionic",
+    "name": "Psionic",
+    "description": "Gain Psionic items that can be equipped to any ally.",
+    "thresholds": [
+      2,
+      4
+    ],
+    "bonuses": [
+      "Gain the Psionic item 1",
+      "Gain the Psionic item 2. Psionic items gain extra effects on Psionic units"
+    ]
+  },
+  {
+    "id": "redeemer",
+    "name": "Redeemer",
+    "description": "For each non-unique trait you have active, your team gains bonus Attack Speed, Armor and Magic Resist.",
+    "thresholds": [
+      1
+    ],
+    "bonuses": [
+      "Per active non-unique trait: 2%/3%/4% Attack Speed and 2/3/4 Armor & MR"
+    ]
+  },
+  {
+    "id": "space_groove",
+    "name": "Space Groove",
+    "description": "Enter the Groove. Groovians can enter the Groove. While in it, they gain Attack Speed and max Health Regen, increased per Groovian on your team.",
+    "thresholds": [
+      1,
+      3,
+      5,
+      7,
+      10
+    ],
+    "bonuses": [
+      "Groovians can enter the Groove. While in it, they gain Attack Speed and max Health Regen",
+      "All Groovians start combat in the Groove for 3 seconds",
+      "Each second spent in the Groove grants 3% stacking Attack Damage and Ability Power",
+      "Increase these effects by 20%",
+      "THE Groove"
+    ]
+  },
+  {
+    "id": "stargazer",
+    "name": "Stargazer",
+    "description": "Stargazers chart a different constellation every game. Possible constellations: The Serpent, The Mountain, The Altar, The Medallion, The Fountain, The Boar. More hexes reveal at each player level.",
+    "thresholds": [
+      3,
+      5,
+      7
+    ],
+    "bonuses": [
+      "Stargazer Effect (3 units)",
+      "Stargazer Effect (5 units)",
+      "Stargazer Effect (7 units)"
+    ]
+  },
+  {
+    "id": "timebreaker",
+    "name": "Timebreaker",
+    "description": "Timebreakers give free rerolls or XP. When you lose, gain free rerolls. When you win, store XP in a Temporal Core (scales with stage).",
+    "thresholds": [
+      2,
+      3,
+      4
+    ],
+    "bonuses": [
+      "When you lose, gain free rerolls. When you win, store XP in a Temporal Core",
+      "AND Allies gain 15% Attack Speed",
+      "AND Timebreakers gain an additional 50% Attack Speed"
+    ]
+  },
+  {
+    "id": "bastion",
+    "name": "Bastion",
+    "description": "Your team gains 12 Armor and Magic Resist. Bastions gain more, and the value doubles in the first 10 seconds of combat.",
+    "thresholds": [
+      2,
+      4,
+      6
+    ],
+    "bonuses": [
+      "16 Armor & MR",
+      "35 Armor & MR",
+      "55 Armor & MR; Non-Bastions gain an additional 20 Armor & MR"
+    ]
+  },
+  {
+    "id": "brawler",
+    "name": "Brawler",
+    "description": "Your team gains 7% Health. Brawlers gain more.",
+    "thresholds": [
+      2,
+      4,
+      6
+    ],
+    "bonuses": [
+      "+25% maximum Health",
+      "+45% maximum Health",
+      "+65% maximum Health"
+    ]
+  },
+  {
+    "id": "challenger",
+    "name": "Challenger",
+    "description": "Your team gains 10% Attack Speed. Challengers gain bonus Attack Speed. When their target dies, Challengers dash to a new target and increase their Attack Speed bonus by 50% for 2.5 seconds.",
+    "thresholds": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "bonuses": [
+      "15% AS",
+      "22% AS",
+      "30% AS",
+      "40% AS"
+    ]
+  },
+  {
+    "id": "channeler",
+    "name": "Channeler",
+    "description": "Innate: Channelers gain 20% additional Mana from all sources. Your team gains Mana Regen, increased for Channelers.",
+    "thresholds": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "bonuses": [
+      "1% Mana Regen | 3% Mana Regen (Channelers)",
+      "1% Mana Regen | 4% Mana Regen (Channelers)",
+      "2% Mana Regen | 6% Mana Regen (Channelers)",
+      "2% Mana Regen | 7% Mana Regen (Channelers)"
+    ]
+  },
+  {
+    "id": "fateweaver",
+    "name": "Fateweaver",
+    "description": "Innate: Fateweavers have Precision.",
+    "thresholds": [
+      2,
+      4
+    ],
+    "bonuses": [
+      "Chance effects on abilities are Lucky",
+      "Gain 20% Crit Chance and 10% Crit Damage. Critical strikes are also Lucky"
+    ]
+  },
+  {
+    "id": "marauder",
+    "name": "Marauder",
+    "description": "Your team gains 5% Omnivamp. Marauders gain more Omnivamp, Attack Damage, and their Omnivamp overhealing is converted into Shield (up to 25% max Health).",
+    "thresholds": [
+      2,
+      4,
+      6
+    ],
+    "bonuses": [
+      "5% Omnivamp, 20% AD",
+      "7% Omnivamp, 30% AD",
+      "10% Omnivamp, 40% AD"
+    ]
+  },
+  {
+    "id": "replicator",
+    "name": "Replicator",
+    "description": "Replicator abilities occur a second time at reduced effectiveness.",
+    "thresholds": [
+      2,
+      4
+    ],
+    "bonuses": [
+      "25% strength",
+      "50% strength"
+    ]
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "description": "Rogues gain Attack Damage and Ability Power. The first time they fall below 50% health, they slip into shadows. Enemies targeting them are redirected to a nearby unit, preferring Tanks.",
+    "thresholds": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "bonuses": [
+      "15% AD & AP",
+      "30% AD & AP",
+      "45% AD & AP",
+      "60% AD & AP"
+    ]
+  },
+  {
+    "id": "sheperd",
+    "name": "Shepherd",
+    "description": "Shepherds summon the Bond of the Stars to aid them in battle. Bia and Bayin's power are increased by the total star level of Shepherd.",
+    "thresholds": [
+      3,
+      5,
+      7
+    ],
+    "bonuses": [
+      "Summon Bia",
+      "Summon Bayin",
+      "Bia and Bayin's bond grows deeper"
+    ]
+  },
+  {
+    "id": "sniper",
+    "name": "Sniper",
+    "description": "Snipers gain Damage Amp, increased against targets farther away.",
+    "thresholds": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "bonuses": [
+      "18% DA; +2% DA per hex",
+      "24% DA; +3% DA per hex",
+      "28% DA; +4% DA per hex",
+      "32% DA; +5% DA per hex"
+    ]
+  },
+  {
+    "id": "vanguard",
+    "name": "Vanguard",
+    "description": "Vanguards gain 5% Durability while Shielded. Combat start and 50% Health: Gain a max Health Shield for 10 seconds. 10% DR while Shielded.",
+    "thresholds": [
+      2,
+      4,
+      6
+    ],
+    "bonuses": [
+      "16% max Health Shield",
+      "28% max Health Shield",
+      "40% max Health Shield"
+    ]
+  },
+  {
+    "id": "voyager",
+    "name": "Voyager",
+    "description": "Combat Start: Your Tanks and Fighters gain a Shield for 15 seconds. Your other allies gain Damage Amp. Voyagers gain double.",
+    "thresholds": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "bonuses": [
+      "175 Shield; 9% DA",
+      "250 Shield; 15% DA",
+      "350 Shield; 18% DA",
+      "500 Shield; 22% DA",
+      "700 Shield; 27% DA"
+    ]
+  }
+]
