@@ -5,15 +5,17 @@ import traitsData from '../assets/data/traits.json'
 
 export default function Modal({ comp, setComps, onClose }) {
     const [isCatalogOpen, setIsCatalogOpen] = useState(true)
-
     const coreUnits = comp.coreUnits || comp.main || []
     const flexZones = comp.flexZones || [{ id: 'default-flex', units: [] }]
+
+    const [selectedFlexId, setSelectedFlexId] = useState(flexZones[0]?.id ?? null)
 
     // --- SYNERGIES ---
     const calculateSynergies = () => {
         const counts = {}
         const uniqueIds = new Set()
 
+        // Core units
         if (Array.isArray(coreUnits)) {
             coreUnits.forEach(unit => {
                 if (unit && unit.id && !uniqueIds.has(unit.id)) {
@@ -26,6 +28,24 @@ export default function Modal({ comp, setComps, onClose }) {
                     }
                 }
             })
+        }
+
+        // Selected flex units
+        if (selectedFlexId) {
+            const selectedFlex = flexZones.find(fz => fz.id === selectedFlexId)
+            if (selectedFlex && Array.isArray(selectedFlex.units)) {
+                selectedFlex.units.forEach(unit => {
+                    if (unit && unit.id && !uniqueIds.has(unit.id)) {
+                        uniqueIds.add(unit.id)
+                        if (Array.isArray(unit.traits)) {
+                            unit.traits.forEach(traitId => {
+                                const normalizedTrait = traitId.toLowerCase().trim()
+                                counts[normalizedTrait] = (counts[normalizedTrait] || 0) + 1
+                            })
+                        }
+                    }
+                })
+            }
         }
 
         const safeTraitsData = Array.isArray(traitsData) ? traitsData : []
@@ -115,10 +135,16 @@ export default function Modal({ comp, setComps, onClose }) {
     }
 
     const handleRemoveFlexZone = (flexId) => {
+        if (selectedFlexId === flexId) setSelectedFlexId(null)
         setComps(prevComps => prevComps.map(c => {
             if (c.id !== comp.id) return c
             return { ...c, flexZones: c.flexZones.filter(fz => fz.id !== flexId) }
         }))
+    }
+
+    // --- SELECT FLEX ---
+    const handleSelectFlex = (flexId) => {
+        setSelectedFlexId(prev => prev === flexId ? null : flexId)
     }
 
     // --- TRI ---
@@ -168,12 +194,18 @@ export default function Modal({ comp, setComps, onClose }) {
                             {flexZones.map((fz, index) => (
                                 <div
                                     key={fz.id}
-                                    className='board-zone flex-zone'
+                                    className={`board-zone flex-zone ${selectedFlexId === fz.id ? 'is-selected' : ''}`}
                                     onDragOver={handleDragOver}
                                     onDrop={(e) => handleDrop(e, 'flex', fz.id)}
                                 >
                                     <div className='flex-zone__header'>
-                                        <h3 className='board-zone__title'>Flex {index + 1}</h3>
+                                        <h3
+                                            className='board-zone__title flex-zone__title--clickable'
+                                            onClick={() => handleSelectFlex(fz.id)}
+                                        >
+                                            Flex {index + 1}
+                                            {selectedFlexId === fz.id && <span className='flex-zone__active-badge'>●</span>}
+                                        </h3>
                                         <button className='btn-remove-flex' onClick={() => handleRemoveFlexZone(fz.id)}>&times;</button>
                                     </div>
                                     <div className='board-zone__grid'>

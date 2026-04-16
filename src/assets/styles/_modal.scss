@@ -219,12 +219,39 @@
 
             .flex-zone {
                 flex: 0 0 220px;
+                cursor: default;
+
+                &.is-selected {
+                    border-color: $light-purple;
+                    border-style: solid;
+                    background: rgba($light-purple, 0.06);
+                    box-shadow: 0 0 12px rgba($light-purple, 0.2);
+                }
 
                 &__header {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: 8px;
+                }
+
+                &__title--clickable {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    user-select: none;
+                    font-size: 1.4rem;
+
+                    &:hover {
+                        color: $light-purple;
+                    }
+                }
+
+                &__active-badge {
+                    color: $light-purple;
+                    font-size: 0.7rem;
+                    animation: pulse 1.5s infinite;
                 }
             }
         }
@@ -478,5 +505,17 @@
 
     &:hover {
         transform: scale(1.2);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
     }
 }
