@@ -121,6 +121,14 @@ function App() {
   const handleImport = (e) => {
     const file = e.target.files[0]
     if (!file) return
+
+    const MAX_FILE_SIZE = 2 * 1024 * 1024
+    if (file.size > MAX_FILE_SIZE) {
+      alert("This file is too large (Max 2MB)")
+      e.target.value = null
+      return
+    }
+
     const fileName = file.name.replace('.json', '')
     const reader = new FileReader()
     reader.onload = (event) => {
