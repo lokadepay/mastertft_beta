@@ -1,19 +1,49 @@
-export default function Sidebar({ comps, activeCompId, onCreateComp, onSelectComp, onResetBdd, onImport, onExport }) {
+import { useState } from 'react'
+
+export default function Sidebar({ comps, activeCompId, dbName, onCreateComp, onSelectComp, onResetBdd, onImport, onExport }) {
+
+    const [folders, setFolders] = useState([
+        {
+            id: 'all',
+            name: 'All Comps',
+            isOpen: true
+        }
+    ])
 
     return (
         <div className="sidebar">
             <div className="sidebar__head">
-                <h2>comp list</h2>
+                <h2>{dbName}</h2>
             </div>
 
             <div className="sidebar__list">
-                {comps.map(comp => (
-                    <div
-                        key={comp.id}
-                        className={`sidebar__item ${activeCompId === comp.id ? 'active' : ''}`}
-                        onClick={() => onSelectComp(comp.id)}
-                    >
-                        {comp.name}
+                {folders.map(folder => (
+                    <div key={folder.id} className='folder'>
+                        {/*<div className='folder__header'>
+                            <h3>{folder.name}</h3>
+                        </div>*/}
+
+                        {folder.isOpen && (
+                            <div className='folder__content'>
+                                {comps.map(comp => {
+                                    const headliner = comp.coreUnits?.[0] || null
+                                    return (
+                                        <div
+                                            key={comp.id}
+                                            className={`sidebar__card ${activeCompId === comp.id ? 'active' : ''}`}
+                                            onClick={() => onSelectComp(comp.id)}
+                                        >
+                                            {headliner && (
+                                                <img src={`./assets/champions/${headliner.id}.png`} alt={headliner.name} className='card-bg' />
+                                            )}
+                                            <div className='card-info'>
+                                                <h4>{comp.name}</h4>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>

@@ -2,7 +2,7 @@
   {
     "id": "anima",
     "name": "Anima",
-    "description": "After losing a player combat, gain 15 Tech, plus additional Tech equal to 5 times the length of your loss streak. Additionally, gain 2 Tech per Anima takedown. Each time Animas get 100 Tech, they prototype new Anima Weapons. You can take them, or save your Tech to get more powerful weapons next time.",
+    "description": "After losing a player combat, gain 15 Tech, plus additional Tech equal to 5 times the length of your loss streak. Additionally, gain 2 Tech per Anima takedown. \n\nEach time Animas get 100 Tech, they prototype new Anima Weapons. You can take them, or save your Tech to get more powerful weapons next time.",
     "thresholds": [
       3,
       6
@@ -61,7 +61,6 @@
   {
     "id": "dark_star",
     "name": "Dark Star",
-    "description": "Summon a Black Hole.",
     "thresholds": [
       2,
       4,
@@ -78,7 +77,7 @@
   {
     "id": "divine_duelist",
     "name": "Divine Duelist",
-    "description": "You heal for 15% of player damage you deal. Fiora always wins a one on one duel.",
+    "description": "You heal for 15% of player damage you deal. \n\nFiora always wins a one on one duel.",
     "thresholds": [
       1
     ],
@@ -89,7 +88,7 @@
   {
     "id": "doomer",
     "name": "Doomer",
-    "description": "Combat Start: Mark all enemies with Doom. The first time enemies are damaged each combat, their Doom is consumed, stealing 8% Attack Damage and Ability Power from them and granting it to your strongest Vex.",
+    "description": "Combat Start: Mark all enemies with Doom. \n\nThe first time enemies are damaged each combat, their Doom is consumed, stealing 8% Attack Damage and Ability Power from them and granting it to your strongest Vex.",
     "thresholds": [
       1
     ],
@@ -111,7 +110,7 @@
   {
     "id": "factory_new",
     "name": "Factory New",
-    "description": "After participating in combat, open an armory to purchase a permanent upgrade for your strongest Graves. Every 3 upgrades, future upgrades will take an additional round.",
+    "description": "After participating in combat, open an armory to purchase a permanent upgrade for your strongest Graves. \n\nEvery 3 upgrades, future upgrades will take an additional round.",
     "thresholds": [
       1
     ],
@@ -122,7 +121,7 @@
   {
     "id": "galaxy_hunter",
     "name": "Galaxy Hunter",
-    "description": "Zed is obtained from the Invader Zed augment. While at least one clone is alive, Zed gains 40% bonus Attack Damage.",
+    "description": "Zed is obtained from the Invader Zed augment. \n\nWhile at least one clone is alive, Zed gains 40% bonus Attack Damage.",
     "thresholds": [
       1
     ],
@@ -176,7 +175,7 @@
   {
     "id": "nova",
     "name": "N.O.V.A.",
-    "description": "6 seconds into combat, N.O.V.A. champions grant a power surge to allies based on champions: Aatrox — Ally Damage 30% Shred and Sunders enemies / Caitlyn — Grant allies 20% Attack Speed / Akali — Allies gain Precision / Maokai — Allies heal 15% max Health / Kindred — Shield the strongest Tank for 800 / Emblem — Allies deal 10% stacking bonus true damage.",
+    "description": "6 seconds into combat, N.O.V.A. champions grant a power surge to allies based on champions: \n\nAatrox — Ally Damage 30% Shred and Sunders enemies \nCaitlyn — Grant allies 20% Attack Speed \nAkali — Allies gain Precision \nMaokai — Allies heal 15% max Health \nKindred — Shield the strongest Tank for 800 \nEmblem — Allies deal 10% stacking bonus true damage.",
     "thresholds": [
       2,
       5
@@ -282,22 +281,21 @@
   {
     "id": "timebreaker",
     "name": "Timebreaker",
-    "description": "Timebreakers give free rerolls or XP. When you lose, gain free rerolls. When you win, store XP in a Temporal Core (scales with stage).",
     "thresholds": [
       2,
       3,
       4
     ],
     "bonuses": [
-      "When you lose, gain free rerolls. When you win, store XP in a Temporal Core",
-      "AND Allies gain 15% Attack Speed",
+      "Allies gain 15% Attack Speed",
+      "AND When you lose, gain free rerolls. When you win, store XP in a Temporal Core",
       "AND Timebreakers gain an additional 50% Attack Speed"
     ]
   },
   {
     "id": "bastion",
     "name": "Bastion",
-    "description": "Your team gains 12 Armor and Magic Resist. Bastions gain more, and the value doubles in the first 10 seconds of combat.",
+    "description": "Your team gains 12 Armor and Magic Resist. \n\nBastions gain more, and the value doubles in the first 10 seconds of combat.",
     "thresholds": [
       2,
       4,
@@ -344,7 +342,7 @@
   {
     "id": "conduit",
     "name": "Conduit",
-    "description": "Innate: Channelers gain 20% additional Mana from all sources. Your team gains Mana Regen, increased for Channelers.",
+    "description": "Innate: Channelers gain 20% additional Mana from all sources. \n\nYour team gains Mana Regen, increased for Channelers.",
     "thresholds": [
       2,
       3,
@@ -451,7 +449,7 @@
   {
     "id": "vanguard",
     "name": "Vanguard",
-    "description": "Vanguards gain 5% Durability while Shielded. Combat start and 50% Health: Gain a max Health Shield for 10 seconds. 10% DR while Shielded.",
+    "description": "Vanguards gain 5% Durability while Shielded. \n\nCombat start and 50% Health: Gain a max Health Shield for 10 seconds.",
     "thresholds": [
       2,
       4,
@@ -460,7 +458,7 @@
     "bonuses": [
       "16% max Health Shield",
       "28% max Health Shield",
-      "40% max Health Shield"
+      "40% max Health Shield, 8% db while shielded"
     ]
   },
   {
