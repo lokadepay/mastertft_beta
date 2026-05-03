@@ -3,7 +3,7 @@ import './assets/styles/base.scss';
 import Background from './components/Background';
 import Sidebar from './components/Sidebar';
 import Modal from './components/Modal';
-import { calculateSynergies } from './utils/synergies';
+import { calculateSynergies } from './utils/Synergies';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 
